@@ -12,10 +12,10 @@
 
 import math
 
-r = 10
+R = 10
 
 area = lambda r: math.pi * r**2
 perimeter = lambda r: 2 * math.pi * r
 
-print(f"面积为：{area(r)}")
-print(f"周长为：{perimeter(r)}")
+print(f"面积为：{area(R)}")
+print(f"周长为：{perimeter(R)}")
