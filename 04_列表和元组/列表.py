@@ -23,3 +23,13 @@ list.append(4)  # [-1,2.3.4]
 
 # 指定位置加入（第一位插入-2）
 list.insert(0, -2)  # [-2,-1,2,3]
+
+
+# 排序
+
+# 升序排列
+list.sort()
+print(f"升序排列：{list}")
+# 降序排列
+list.sort(reverse=True)
+print(f"降序排列：{list}")
