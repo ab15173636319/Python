@@ -29,3 +29,12 @@ def sum_numbers(*args):
 
 
 print(sum_numbers(1, 22, 33, 4))
+
+
+# 返回类型->int
+def sum_numbers(a: int, b: int) -> int:
+    return a + b
+
+
+# 调用函数
+print(sum_numbers(1, 2))  # 输出: 3
