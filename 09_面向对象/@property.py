@@ -17,4 +17,25 @@ class Rect:
 
 
 rect = Rect(10, 10)
-print(rect.area)
+# print(rect.area)
+
+
+# 创建的类属性或实例可能会被外部1修改，为了保护数据安全，我们会将这些属性或方法私有化，然而私有化的属性或方法
+# 只能在类的内部被访问，外部无法直接访问。
+# 为了方便外部访问，我们可以使用@property
+
+
+class TV_show:
+    __TV_name = "《变形金刚》"
+
+    def __init__(self, tv_name) -> None:
+        self.__TV_name = tv_name
+
+    @property
+    def show(self):
+        return f"正在播放{self.__TV_name}"
+
+
+tv = TV_show("《我是机器人》")
+
+print(tv.show)
